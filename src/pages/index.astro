@@ -5,11 +5,203 @@ import logo from '../assets/images/file.svg';
 ---
 
 <Layout title='Welcome to Astro.'>
-  <main>
+  <main class='px-6 py-8'>
     <!-- main info -->
     <div id='main-info'>
-      <Image src={logo} alt='logo' />
+      <div class='flex justify-between items-center mb-10'>
+        <Image height={60} src={logo} alt='logo' />
+        <div class='text-white'>
+          Developer <br /> & Designer
+        </div>
+      </div>
+      <div class='text-center mb-10'>
+        <img class='rounded-xl w-1/2 inline-block' src='https://wpriverthemes.com/HTML/drake/assets/images/me.jpg' alt='' />
+      </div>
+      <div class='text-center space-y-2 mb-6'>
+        <div class='text-white text-4xl'>Cam Phan</div>
+        <div class='text-white text-lg'>cam.phan12993@gmail.com</div>
+        <div class='text-gray-400 text-lg flex items-center gap-2 justify-center'>
+          <span class='w-6 h-6 text-white'>
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
+              <path strokeLinecap='round' strokeLinejoin='round' d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'></path>
+              <path strokeLinecap='round' strokeLinejoin='round' d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'></path>
+            </svg>
+          </span>
+
+           Danang, Vietnam
+        </div>
+      </div>
+      <ul class='flex gap-4 justify-center'>
+        <li>
+          <div class='flex items-center justify-center border p-2 w-10 h-10 text-white rounded-full hover:border-orange-400 hover:text-orange-400 cursor-pointer transition-all duration-200'>
+            <span class='w-full h-full inline-block'>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='ionicon' viewBox='0 0 512 512'
+                ><path
+                  d='M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z'
+                ></path></svg
+              >
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class='flex items-center justify-center border p-2 w-10 h-10 text-white rounded-full hover:border-orange-400 hover:text-orange-400 cursor-pointer transition-all duration-200'>
+            <span class='w-full h-full inline-block'>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='ionicon' viewBox='0 0 512 512'
+                ><path
+                  d='M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z'
+                ></path></svg
+              >
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class='flex items-center justify-center border p-2 w-10 h-10 text-white rounded-full hover:border-orange-400 hover:text-orange-400 cursor-pointer transition-all duration-200'>
+            <span class='w-full h-full inline-block'>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='ionicon' viewBox='0 0 512 512'
+                ><path
+                  d='M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z'
+                ></path></svg
+              >
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <button class='bg-orange-400 w-full p-3 rounded-full mt-10 uppercase text-lg'>Hire Me</button>
     </div>
     <!-- end main info -->
+
+    <!-- intro -->
+    <section id='intro' class='py-16'>
+      <div class='text-white inline-flex items-center gap-2 border border-gray-500 rounded-full px-4 py-2'>
+        <i class='w-4 h-4'>
+          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'>
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
+            ></path>
+          </svg>
+        </i>
+        <span class='uppercase text-sm tracking-widest'>Introduce</span>
+      </div>
+      <div class='text-white text-5xl leading-normal mt-10'>
+        Say Hi from <span class='text-orange-400'>Cam</span>, Framer Designer and Developer
+      </div>
+      <div class='text-white mt-4 text-lg'>I design and code beautifully simple things and i love what i do. Just simple like that!</div>
+
+      <ul class='flex gap-10 mt-10 justify-center'>
+        <li>
+          <div class='space-y-4'>
+            <div class='text-5xl text-orange-400'>10+</div>
+            <div class='text-gray-400 uppercase'>YEARS OF <br /> EXPERIENCE</div>
+          </div>
+        </li>
+        <li>
+          <div class='space-y-4'>
+            <div class='text-5xl text-orange-400'>100+</div>
+            <div class='text-gray-400 uppercase'>PROJECTS COMPLETED <br /> ON 15 COUNTRIES</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- end intro -->
+
+    <!-- About -->
+    <section id='about' class='py-16'>
+      <div class='text-white inline-flex items-center gap-2 border border-gray-500 rounded-full px-4 py-2'>
+        <i class='w-4 h-4'>
+          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'>
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z'></path>
+          </svg>
+        </i>
+        <span class='uppercase text-sm tracking-widest'>About</span>
+      </div>
+      <div class='text-white text-4xl mt-10'>Every great design begin with an even <span class='text-orange-400'>better story</span></div>
+      <div class='text-gray-500 mt-4 text-lg'>
+        Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital
+        products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.
+      </div>
+    </section>
+    <!-- end About -->
+
+    <!-- Resume -->
+    <section id='resume' class='py-16'>
+      <div class='text-white inline-flex items-center gap-2 border border-gray-500 rounded-full px-4 py-2'>
+        <i class='w-4 h-4'>
+          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'>
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z'
+            ></path>
+          </svg>
+        </i>
+        <span class='uppercase text-sm tracking-widest'>Resume</span>
+      </div>
+      <div class='text-white text-4xl mt-10'>Education & <span class='text-orange-400'>Experience</span></div>
+      <ul class='mt-8' id='time-line'>
+        <li>
+          <div class='pl-16 pb-10 space-y-5 relative'>
+            <div class='text-gray-500 text-lg transition-all duration-200'>2020 - Present</div>
+            <ul class='space-y-4'>
+              <li class='space-y-1'>
+                <div class='text-white text-2xl'>Framer Desinger & Developer</div>
+                <div class='text-gray-500'>Brunodee Agency</div>
+              </li>
+              <li class='space-y-1'>
+                <div class='text-white text-2xl'>Framer Desinger & Developer</div>
+                <div class='text-gray-500'>Brunodee Agency</div>
+              </li>
+              <li class='space-y-1'>
+                <div class='text-white text-2xl'>Framer Desinger & Developer</div>
+                <div class='text-gray-500'>Brunodee Agency</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class='pl-16 space-y-5 relative'>
+            <div class='text-gray-500 text-lg transition-all duration-200'>2020 - Present</div>
+            <ul class='space-y-4'>
+              <li class='space-y-1'>
+                <div class='text-white text-2xl'>Framer Desinger & Developer</div>
+                <div class='text-gray-500'>Brunodee Agency</div>
+              </li>
+              <li class='space-y-1'>
+                <div class='text-white text-2xl'>Framer Desinger & Developer</div>
+                <div class='text-gray-500'>Brunodee Agency</div>
+              </li>
+              <li class='space-y-1'>
+                <div class='text-white text-2xl'>Framer Desinger & Developer</div>
+                <div class='text-gray-500'>Brunodee Agency</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- end Resume -->
   </main>
 </Layout>
+
+<style>
+  #time-line > li > div:after {
+    content: '';
+    @apply absolute w-3 h-3 bg-gray-500 left-0 top-2 rounded-full transition-all duration-200;
+  }
+  #time-line > li > div:before {
+    content: '';
+    @apply absolute w-[1px] -bottom-2 bg-gray-500 left-[5px] top-2;
+  }
+
+  #time-line > li > div:hover:after {
+    @apply bg-orange-400;
+  }
+  #time-line > li > div:hover > div {
+    @apply text-orange-400;
+  }
+</style>
